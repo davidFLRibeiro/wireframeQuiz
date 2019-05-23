@@ -1,0 +1,52 @@
+<!--quiz info score and question questionNumber-->
+ <section class="quiz-info">
+  <ul>
+      <li>Question: <span class="questionNumber">1</span>/10</li>
+      <li>Score: <span class="score">${score}</span></li>
+  </ul>
+
+
+
+
+
+<!--question section form-->
+    <h2>${STORE[questionNumber].question}</h2>
+    <form>
+    <fieldset>
+    <label class="answerOption">
+    <input type="radio" value="${STORE[questionNumber].answers[0]}" name="answer" required>
+    <span>${STORE[questionNumber].answers[0]}</span>
+    </label>
+    <label class="answerOption">
+    <input type="radio" value="${STORE[questionNumber].answers[1]}" name="answer" required>
+    <span>${STORE[questionNumber].answers[1]}</span>
+    </label>
+    <label class="answerOption">
+    <input type="radio" value="${STORE[questionNumber].answers[2]}" name="answer" required>
+    <span>${STORE[questionNumber].answers[2]}</span>
+    </label>
+    <label class="answerOption">
+    <input type="radio" value="${STORE[questionNumber].answers[3]}" name="answer" required>
+    <span>${STORE[questionNumber].answers[3]}</span>
+    </label>
+    <button type="submit" class="submitButton">Submit</button>
+    </fieldset>
+    </form>
+    </section>`;
+
+
+<!--if answer is correct--> 
+ <div class="correctFeedback"><div class="icon"><img src="${STORE[questionNumber].icon}" alt="${STORE[questionNumber].alt}"/></div><p>You got it right!</p><button type=button class="nextButton">Next</button></div>`
+
+<!--if answer is incorrect-->
+<div class="correctFeedback"><div class="icon"><img src="${STORE[questionNumber].icon}" alt="${STORE[questionNumber].alt}"/></div><p>You got it wrong<br>the correct answer is <span>"${correctAnswer}"</span></p><button type=button class="nextButton">Next</button></div>`
+
+
+
+<!--on the end render a gif with score and restart button-->
+<section class="result">
+    <h3>${text}</h3><section class="quiz-info">
+    <button class="restartButton">Restart Quiz</button>
+  <ul>
+      <li>Final Result: <span class="score">${score}</span></li>
+  </ul><img src="https://media.giphy.com/media/7Ee6I8ecvwFCU/giphy.gif"</section>

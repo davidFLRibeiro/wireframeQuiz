@@ -1,0 +1,5 @@
+My idea for the quiz is, to be clean and simple.
+ On the background an image of the best NBA players, on start page we have a small text about NBA knowlage and a button to start.
+when quiz starts we have a clean quiz background image is allways the same the form is blue to get a good contrast with background image and text
+and we have a quiz infoin all questions that gives us the score and the question, then we have a feedback with an image related with the answer of the question with a smal
+text saying if it´s correct or not. on the end of the quiz we have a GIF from an NBA legend and a text if score is bettwen 1 and 5 give a message, bettwen 5 and 9 and a perfet 10.
